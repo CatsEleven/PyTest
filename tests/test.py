@@ -21,5 +21,5 @@ class TestCSVPrinter(unittest.TestCase):
             unittest.TestCase.fail("this line should not be involked")
         # except FileNotFoundError as e:
         #     pass
-        except:
+        except FileNotFoundError:
             pass
